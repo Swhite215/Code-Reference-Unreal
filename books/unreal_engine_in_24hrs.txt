@@ -1,0 +1,175 @@
+Title: Unreeal Engine 4 Game Development in 24 Hours
+Authors: Aram Cookson, Ryan DowlingSoka, and Clinton Crumpler
+
+Summarization of Content
+
+Chapter 1 - Introducing Unreal Engine 4
+    a. Installing Unreal
+    b. Creating Your First Project
+    c. Learning the Interface
+    d. View Modes and Visualizers
+    e. Playing a Level
+    f. Summary
+
+Chapter 2 - Understanding the Gameplay Framework
+    a. Available Resources
+    b. Asset References and the Reference Viewer
+    c. Gameplay Framework
+    c. Summary
+
+Chapter 3 - Coordinates, Transforms, Units, and Organization
+    a. Understanding Cartesian Coordinates
+    b. Working with Transforms
+    c. Assessing Units and Measurements
+    d. Organizing a Scene
+    e. Summary
+
+Chapter 4 - Working with Static Mesh Actors
+    a. Static Mesh Assets
+    b. Static Mesh Editor
+    c. Viewing UV Layouts
+    d. Collision Hulls
+    e. Static Mesh Actors
+    f. Summary
+
+Chapter 5 - Applying Lighting and Rendering
+    a. Learning Light Terminology
+    b. Understanding Light Types
+    c. Using Light Properties
+    d. Building Lighting
+    e. Summary
+
+Chapter 6 - Using Materials
+    a. Understanding Materials
+    b. Physically Based Rendering
+    c. Material Input Types
+    d. Creating Textures
+    e. Making a Material
+    f. Summary
+
+Chapter 7 - Using Audio System Elements
+    a. Introducing Audio Basics
+    b. Using Sound Actors
+    c. Controlling Sounds with Audio Volumes
+    d. Summary
+
+Chapter 8 - Creating Landscapes and Foliage
+    a. Working with Landscapes
+    b. Sculpting Shapes and Volumes
+    c. Using Foliage
+    d. Summary
+
+Chapter 9 - World Building
+    a. Building Worlds
+    b. World Building Process
+    c. Summary
+
+Chapter 10 - Crafting Effects with Particle Systems
+    a. Understanding Particles and Data Types
+    b. Working with Cascade
+    c. Using COmmon Modules
+    d. Setting Up Materials for Particles
+    e. Triggering Particle Systems
+    f. Summary
+
+Chapter 11 - Using Skeletal Mesh Actors
+    a. Defining Skeletal Meshes
+    b. Importing Skeletal Meshes
+    c. Learning Persona
+    d. Using Skeletal Mesh Actors
+    e. Summary
+
+Chapter 12 - Matinee and Cinematics
+    a. Matinee Actors
+    b. Matinee Editor
+    c. Curve Editor
+    d. Working with Other Tracks
+    e. Working with Cameras in Matinee
+    f. Summary
+
+Chapter 13 - Learning to Work with Physics
+    a. Using Physics in UE4
+    b. Simulating Physics
+    c. Using Physical Materials
+    d. Working with Constraints
+    e. Using Force Actors
+    f. Summary
+
+Chapter 14 - Introducing Blueprint Visual Scripting System
+    a. Visual Scripting Basics
+    b. Understanding the Blueprint Editor
+    c. Fundamental Concepts in Scripting
+    d. Summary
+
+Chapter 15 - Working with Level Blueprints
+    a. Actor Collision Settings
+    b. Assigning Actors to Events
+    c. Assinging Actors to Reference Variables
+    d. Summary
+
+Chapter 16 - Working with Blueprint Classes
+    a. Using Blueprint Classes
+    b. The Blueprint Editor Interface
+    c. Working with Components
+    d. Working with the Timeline
+    e. Scripting a Pulsating Light
+    f. Summary
+
+Chapter 17 - Using Editable Variables and the Construction Script
+    a. Setting Up
+    b. Making Editable Variables
+    c. Using the Construction Script
+    d. Summary
+
+Chapter 18 - Making Key Input Events and Spawning Actors
+    a. Why Spawning is Important
+    b. Creating a Blueprint Class to Spawn
+    c. Setting up the Spawner Blueprint
+    d. Spawning an Actor from a Class
+    e. Summary
+
+Chapter 19 - Making an Action Encounter
+    a. Project Game Modes
+    b. Knowing Characters' Abilities
+    c. Using Blueprint Classes
+    d. Actor and Component Tags
+    e. Summary
+
+Chapter 20 - Creating an Arcade Shooter: Input Systems and Pawns
+    a. Identifying Requirments with a Design Summary
+    b. Creating a Game Project
+    c. Creating a Custom Game Mode
+    d. Creating a Custom Pawn and Player Controller
+    e. Controlling a Pawn's Movement
+    f. Setting Up a Fixed Camera
+    g. Summary
+
+Chapter 21 - Creating an Arcade Shooter: Obstacles and Pickups
+    a. Creating an Arcade Shooter: Obstacles and Pickups
+    b. Making Your Obstacle Move
+    c. Damaging the Pawn
+    d. Restarting the Game on Death
+    e. Creating a Health Pickup
+    f. Creating an Actor Spawner
+    g. Cleaning Up Old Obstacles
+    h. Summary
+
+Chapter 22 - Working with UMG
+    a. Creating a Widget Blueprint
+    b. Navigating the UMG Interface
+    c. Creating a Start Menu
+    d. Sample Menu System
+    e. Summary
+
+Chapter 23 - Making an Executable
+    a. Cooking Content
+    b. Packaging A Project for Windows
+    c. Resources for Android and iOS Packaging
+    d. Accessing Advanced Packaging Settings
+    e. Summary
+
+Chapter 24 - Working with Mobile
+    a. Developing for Mobile Devices
+    b. Using Touch
+    c. Using a Device's Motion Data
+    d. Summary

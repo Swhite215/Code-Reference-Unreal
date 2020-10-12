@@ -48,12 +48,28 @@ Chapter 2 - Understanding the Gameplay Framework
             - PlayerController - manages inputs from the player and directs a pawn in the game by possessing it.
             - PawnClass - takes input from the PlayerController class and uses it to direct the physical representation of the player in the game (Pawn, Character, and Vehicle)
         - HUD Class - used to draw 2D interface content to the player's screen and create in-Game heads-up display
-        
+
 Chapter 3 - Coordinates, Transforms, Units, and Organization
     a. Understanding Cartesian Coordinates
+        - Z (Up and Down), Y (Left to Right), X (Front to Back)
     b. Working with Transforms
+        - Transformation Tools
+            - Move, Scale, Rotate
+        - Interactive and Manual Transforms
+            - Interactive - using Move, Scale, or Rotate transformation tools
+            - Manual - using specific values or numeric setting in the Details Panel for an Actor
+        - World and Local Transforms
+            - World - use the whole world, understanding that up is up, down i sdown, forward is forward, and so on.
+            - Local - references an Actor as the rule setter
     c. Assessing Units and Measurements
+        - 1 Unreal Unit UU is equal to 1 real world centimeter, char = 180uu, door = 220uu, etc.
+        - Grid Units - Snapping to Grid
     d. Organizing a Scene
+        - World Outliner - hierarchical view of actors in a scene
+        - Folders - organization tool
+        - Grouping - turning a selection of Actors into a single placed Actor
+        - Layers
+        - Attaching - attaching Actors to each other to create parent-child relationships
 
 Chapter 4 - Working with Static Mesh Actors
     a. Static Mesh Assets

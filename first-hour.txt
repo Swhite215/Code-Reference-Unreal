@@ -1,0 +1,17 @@
+My First Hour with Unreal Engine 4
+
+1. Epic Games Launcher - Entry Point
+    - Home, Store, Library, Friends, Unreal Engine
+    - Unreal Engine
+        - Learn, Marketplace, Library
+
+2. Creating My First Project
+    - Project - Network of Files
+        - Level, Asset, and Materials
+    - Project Structure
+        - Project - Content
+            - Geometry
+            - Content
+            - StarterContent
+            - ThirdPerson
+            - ThirdPersonBP 

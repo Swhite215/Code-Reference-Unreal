@@ -72,11 +72,22 @@ Chapter 3 - Coordinates, Transforms, Units, and Organization
         - Attaching - attaching Actors to each other to create parent-child relationships
 
 Chapter 4 - Working with Static Mesh Actors
-    a. Static Mesh Assets
-    b. Static Mesh Editor
+    a. Static Mesh Assets - store the pivot point, vertices, edges, and polygons that define the visual look of a model, as well as LODs
+    b. Static Mesh Editor - allows you to edit, modify, and set base properties for Static Mesh assets stored in the Content Browser
     c. Viewing UV Layouts
-    d. Collision Hulls
-    e. Static Mesh Actors
+        - UV Channel 0 - UV Channels
+        - UV Channel 1 - Lightmap Data - used for storing light and shadow information on the surface of a mesh
+    d. Collision Hulls - simple primitive shape that surrounds a mesh and is used to identify collision events
+        - Collision Event - occurs when two Actor collision hulls hit, touch, or overlap with each other
+        - You can: view and edit collision hulls
+        - Convex Decomposition - auto-generate collision hulls for more complicated models
+        - Per-Poly Collision - most accurate collision you can have, also the most computationally intensive
+    e. Static Mesh Actors - placed instances of a Static Mesh asset in a level
+        - Mobility Settings
+            - Static - tells the light engine that lightning needs to be precalculated
+            - Movable - tells the light engine to calculate lightning during runtime
+        - You can: change the mesh reference, replace the material and edit collision responses on a Static Mesh Actor
+            - Collision Enabled, Response Flags, Object Type
 
 Chapter 5 - Applying Lighting and Rendering
     a. Learning Light Terminology

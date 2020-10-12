@@ -5,24 +5,55 @@ Summarization of Content
 
 Chapter 1 - Introducing Unreal Engine 4
     a. Installing Unreal
+        - Epice Games Launcher -> Library -> Add Version -> Selet Version -> Install
     b. Creating Your First Project
+        - Project Browser -> Blueprint/C++ -> Template -> Target Hardware -> Graphics Quality -> With Starter Content -> Location -> Name -> Create Project
     c. Learning the Interface
+        - Layout Interface is Modifiable
+        - Menu Bar - File, Edit, Window, and Help
+        - Modes Panel
+            - Place Mode - For placing actors in a scene
+            - Paint Mode - For painting vertex color data on Static Mesh Actors
+            - Landscape Mode - For Editing Landscape Terrain Actors
+            - Foliage Mode - For painting instanced Foliage Actors in a Level
+            - Geometry Editing Mode - For Editing BSP Brush Actors on the vertex edge face level
+        - World Outlinier Panel - Displays all the actors within the current level in a hierarchical view
+        - Detail Panel - displays all the editable properties for the selected actor in the Viewport
+        - Content Browser Panel - primary area for managing assets in a project
+        - Viewport Panel - windows into the world you create. Use to move around the current level
+            - Viewport Types - Perspective and Orthographic
     d. View Modes and Visualizers
+        - Lit - Shows the final result of a scene with materials and lighting applied
+        - Unlit - Removes all lighting from the scene, showing base color from assigned materials
+        - Wireframe - Shows all the polygon edges of Actors in the scene
+        - Detail Lighting - Displays a neautral material across the entire scene, using the normal maps of the assigned materials
+        - Lighting Only - Displays neutral materials that is affected only by lighting without normal maps data
     e. Playing a Level
-    f. Summary
 
 Chapter 2 - Understanding the Gameplay Framework
     a. Available Resources
+        - Epic Games Launcher Community and Learn Sections
+        - Play-In Editor - collection of options that allowqs you to playtest a level without having to compile or package content beforehand
+        - Project Folder Structure
+            - Config - this folder contains default .ini files that store default Editor and project settings and preferences
+            - Content - This folder stores all the assets in the project that are either imported or created directly in the Editor
+            - Intermediate - This folder stores the project's working .ini setting and preference files, along with a CachedAssetRegistry.bin file
+            - Saved - This folder contains Editor auto save and backup files, a Collection folder for assets organized into collections in the content browser, project Config settings for target platforms, Editor log files, and the project thumbnail .png image file that you see in the Launcher
     b. Asset References and the Reference Viewer
-    c. Gameplay Framework
-    c. Summary
-
+        - Reference Viewer - shows the dependencies for an asset
+    c. Gameplay Framework - collection of C++ or Blueprint classes that manages trhe rules of the Game, player input and avatars, cameras, and player HUDs in every project
+        - GameMode Class - used to set the rules of the Game and store all the other classes that are needed to define the Game's core functionality
+            - DefaultPawn, HUD, PlayerController, Spectator, ReplaySpectator, PlayerState, GameState
+        - Controller Classes - controls a pawn in the game
+            - PlayerController - manages inputs from the player and directs a pawn in the game by possessing it.
+            - PawnClass - takes input from the PlayerController class and uses it to direct the physical representation of the player in the game (Pawn, Character, and Vehicle)
+        - HUD Class - used to draw 2D interface content to the player's screen and create in-Game heads-up display
+        
 Chapter 3 - Coordinates, Transforms, Units, and Organization
     a. Understanding Cartesian Coordinates
     b. Working with Transforms
     c. Assessing Units and Measurements
     d. Organizing a Scene
-    e. Summary
 
 Chapter 4 - Working with Static Mesh Actors
     a. Static Mesh Assets
@@ -30,14 +61,12 @@ Chapter 4 - Working with Static Mesh Actors
     c. Viewing UV Layouts
     d. Collision Hulls
     e. Static Mesh Actors
-    f. Summary
 
 Chapter 5 - Applying Lighting and Rendering
     a. Learning Light Terminology
     b. Understanding Light Types
     c. Using Light Properties
     d. Building Lighting
-    e. Summary
 
 Chapter 6 - Using Materials
     a. Understanding Materials
@@ -45,24 +74,20 @@ Chapter 6 - Using Materials
     c. Material Input Types
     d. Creating Textures
     e. Making a Material
-    f. Summary
 
 Chapter 7 - Using Audio System Elements
     a. Introducing Audio Basics
     b. Using Sound Actors
     c. Controlling Sounds with Audio Volumes
-    d. Summary
 
 Chapter 8 - Creating Landscapes and Foliage
     a. Working with Landscapes
     b. Sculpting Shapes and Volumes
     c. Using Foliage
-    d. Summary
 
 Chapter 9 - World Building
     a. Building Worlds
     b. World Building Process
-    c. Summary
 
 Chapter 10 - Crafting Effects with Particle Systems
     a. Understanding Particles and Data Types
@@ -70,14 +95,12 @@ Chapter 10 - Crafting Effects with Particle Systems
     c. Using COmmon Modules
     d. Setting Up Materials for Particles
     e. Triggering Particle Systems
-    f. Summary
 
 Chapter 11 - Using Skeletal Mesh Actors
     a. Defining Skeletal Meshes
     b. Importing Skeletal Meshes
     c. Learning Persona
     d. Using Skeletal Mesh Actors
-    e. Summary
 
 Chapter 12 - Matinee and Cinematics
     a. Matinee Actors
@@ -85,7 +108,6 @@ Chapter 12 - Matinee and Cinematics
     c. Curve Editor
     d. Working with Other Tracks
     e. Working with Cameras in Matinee
-    f. Summary
 
 Chapter 13 - Learning to Work with Physics
     a. Using Physics in UE4
@@ -93,19 +115,16 @@ Chapter 13 - Learning to Work with Physics
     c. Using Physical Materials
     d. Working with Constraints
     e. Using Force Actors
-    f. Summary
 
 Chapter 14 - Introducing Blueprint Visual Scripting System
     a. Visual Scripting Basics
     b. Understanding the Blueprint Editor
     c. Fundamental Concepts in Scripting
-    d. Summary
 
 Chapter 15 - Working with Level Blueprints
     a. Actor Collision Settings
     b. Assigning Actors to Events
     c. Assinging Actors to Reference Variables
-    d. Summary
 
 Chapter 16 - Working with Blueprint Classes
     a. Using Blueprint Classes
@@ -113,27 +132,23 @@ Chapter 16 - Working with Blueprint Classes
     c. Working with Components
     d. Working with the Timeline
     e. Scripting a Pulsating Light
-    f. Summary
 
 Chapter 17 - Using Editable Variables and the Construction Script
     a. Setting Up
     b. Making Editable Variables
     c. Using the Construction Script
-    d. Summary
 
 Chapter 18 - Making Key Input Events and Spawning Actors
     a. Why Spawning is Important
     b. Creating a Blueprint Class to Spawn
     c. Setting up the Spawner Blueprint
     d. Spawning an Actor from a Class
-    e. Summary
 
 Chapter 19 - Making an Action Encounter
     a. Project Game Modes
     b. Knowing Characters' Abilities
     c. Using Blueprint Classes
     d. Actor and Component Tags
-    e. Summary
 
 Chapter 20 - Creating an Arcade Shooter: Input Systems and Pawns
     a. Identifying Requirments with a Design Summary
@@ -142,7 +157,6 @@ Chapter 20 - Creating an Arcade Shooter: Input Systems and Pawns
     d. Creating a Custom Pawn and Player Controller
     e. Controlling a Pawn's Movement
     f. Setting Up a Fixed Camera
-    g. Summary
 
 Chapter 21 - Creating an Arcade Shooter: Obstacles and Pickups
     a. Creating an Arcade Shooter: Obstacles and Pickups
@@ -152,24 +166,20 @@ Chapter 21 - Creating an Arcade Shooter: Obstacles and Pickups
     e. Creating a Health Pickup
     f. Creating an Actor Spawner
     g. Cleaning Up Old Obstacles
-    h. Summary
 
 Chapter 22 - Working with UMG
     a. Creating a Widget Blueprint
     b. Navigating the UMG Interface
     c. Creating a Start Menu
     d. Sample Menu System
-    e. Summary
 
 Chapter 23 - Making an Executable
     a. Cooking Content
     b. Packaging A Project for Windows
     c. Resources for Android and iOS Packaging
     d. Accessing Advanced Packaging Settings
-    e. Summary
 
 Chapter 24 - Working with Mobile
     a. Developing for Mobile Devices
     b. Using Touch
     c. Using a Device's Motion Data
-    d. Summary

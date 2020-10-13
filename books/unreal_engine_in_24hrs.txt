@@ -147,8 +147,33 @@ Chapter 6 - Using Materials
 
 Chapter 7 - Using Audio System Elements
     a. Introducing Audio Basics
+        - Audio Components - Sound Wave, Ambient Sound ACtor, Sound Cue Assets and Sound Cue Editor, and Sound Attentuation
+        - Importing Audio Files - .wav drag and drop, and audacityteam.org
     b. Using Sound Actors
+        - Ambient Sound Actor Properties
+             - Sound - sound wave asset or sound cue asset
+             - Is UI Sound - determines whether the sound asset plays when the game is paused
+             - Volume Multiplier - sets the overall volume of the sound
+             - Pitch Multiplier - sets the overall pitch of the  sound
+             - Instance Parameters - allows addition of per-instance parameters for the sound
+             - Sound Class Override - optionally assigns a group for the sound asset
+        - Setting Attenuation - falloff of the sound as you move further away from it in 3D space
+            - Attenuate - enables the use of attenutation via volume
+            - Spatialize - enables the source to be positioned in 3D space
+            - Distance Algorithm - specifies the type of volume versus distance algorithm
+            - Attenuation Shape - specifies the shape of the attentuation volume, usually a sphere
+            - Radius - specifies the overall size of the volume
+            - Falloff Distance - specifies the distance over which falloff occurs
+            - Non-Spatialized Radius - specifies the distance at which spatialization begins
+        - Using Modulation Properties
+            - Pitch Modulation Min, Pitch Modulation Max, Volume Modulation Min, Volume Modulation Max, High Frequency Gain Multiplier
+        - Creating Sound Cues - powerful sound control
+            - Graph Panel - flow of audio from left to right
+            - Palette Panel - lists various sound nodes that you can use in teh Graph panel and chain together to create complex sounds
+            - Play Cue - plays an entire Sound Cue
+            - Play Node - plays just audio coming from a selected node
     c. Controlling Sounds with Audio Volumes
+        - Audio Volumes - used to conmtrol apply various sounds in a scene
 
 Chapter 8 - Creating Landscapes and Foliage
     a. Working with Landscapes

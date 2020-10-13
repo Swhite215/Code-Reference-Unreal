@@ -120,10 +120,30 @@ Chapter 5 - Applying Lighting and Rendering
 
 Chapter 6 - Using Materials
     a. Understanding Materials
-    b. Physically Based Rendering
+        - Material/Shader - combination of textures, vectors, and other mathematical calculations that work in tandem to create surface decsriptions and properties for assetst in UE4
+    b. Physically Based Rendering - use material parameters to allow assets to form their own lighting and shadow information
     c. Material Input Types
+        - Base Color/Albedo - core color decsription of a surface in a material minus all shadow and lighting detail
+        - Metalness - used to describe whether a material is metallic
+        - Roughness - represents the roughness and the history of the surface of the material being created
+        - Normal - normal map textures or three-vector values, decsribe the direction in which light should react with a surface
     d. Creating Textures
+        - Powers of 2 - 4096, 2048, 1024, 512, 256, 128, 64, 32, 165, 8, 4, 2
+        - Mipping or Mip Mapping - UE4 reduces texture size by continuously halving it as the player gets farther from the asset
+        - Texture File Type - .tga, .psd, .tiff, .bmp, .float, .pcx, .png, .jpg, .dds, .
+        - Importing Textures
     e. Making a Material
+        - Content Browser -> Create Basic Asset/Material
+        - Material Editor Panels
+            - Viewport Panel - real time preview of the material
+            - Details Panel - where you can change overall material properties
+            - Graph Panel - visual editing
+            - Palette Panel - houses all the special nodes and math functions for creating specific effects within a material
+        - Inputs and Outputs
+        - Value Nodes - numbers that can create values or colors depending on the number of values used
+            - Constant Node - single number or value
+            - Constant3Vector Node - vector of three numbers, each representing a RGB value
+        - Instances - key to reusing materials multiple times, change node to parameter for flexibility
 
 Chapter 7 - Using Audio System Elements
     a. Introducing Audio Basics

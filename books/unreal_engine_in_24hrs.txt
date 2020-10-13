@@ -91,9 +91,32 @@ Chapter 4 - Working with Static Mesh Actors
 
 Chapter 5 - Applying Lighting and Rendering
     a. Learning Light Terminology
+        - Direct Lighting - refers top light that falls on the surface of an Actor, without any interference from other Actors
+        - Indirect or Bounced Lighting - refers to light that has been reflected off the surface of another Actor in the scene
+        - Static Lighting - refers to lighting for objects and lights that do not move
+        - Dynamic Lighting - refers to lights and objects that may move at runtime
+        - Shadows - created when the engine takes snapshots of the silhouette of a mesh from the light's point of view
     b. Understanding Light Types
+        - Point Lights - work much like a real world lightbulb, emitting light equally in all directions from a single point in space
+        - Spot Lights - emits light from a single point in a cone shape toward a specific direction
+        - Sky Light - captures the distant parts of a level, everything further than SkyDistanceThreshold, and appliesd light to it
+        - Direction Light - simulates light that is being emitted from a source that is infinitely far away
     c. Using Light Properties
+        - Intensity - brightness of light, in lumens
+        - Light Color - color of the light
+        - Attenuation Radius - maximum distance the light will reach
+        - Cast Shadows - determines whether objects affected by the light cast shadows
+        - Inside Cone Angle - sets the angle in degrees of a Spot Light's bright area
+        - Outside Cone Angle - sets the angle in degrees of a Spot Light's falloff area
+        - Temperature - allows you to set the light based on Kelvin color temperature scale
     d. Building Lighting
+        - Lightmass - tool for building lighting (Window -> World Settings -> Lightmass)
+        - Build - Build -> Lighting Quality -> Preview || Lighting Quality -> High
+        - Swarm Agent - manages communication between the editor and Lightmass. Displays the build progress. Can connect to external computing power for over the network rendering
+        - Mobility
+            - Static - lights that cannot be changed or moved in any way at runtime
+            - Movable - lights case completely dynamic light and shadows, and they can change position, rotation, color, brightness, falloff, radius and more
+            - Stationary - lights that cannot move, however their brightness and color can be chaged at runtime
 
 Chapter 6 - Using Materials
     a. Understanding Materials

@@ -173,12 +173,56 @@ Chapter 7 - Using Audio System Elements
             - Play Cue - plays an entire Sound Cue
             - Play Node - plays just audio coming from a selected node
     c. Controlling Sounds with Audio Volumes
-        - Audio Volumes - used to conmtrol apply various sounds in a scene
+        - Audio Volumes - used to control and apply various sounds in a scene
 
 Chapter 8 - Creating Landscapes and Foliage
     a. Working with Landscapes
+        - Landscape Tools - Manage, Sculpt, and Paint
+            - Manage Tab - create and manage existing landscapes, create based on parameters or from an imported height map
+            - Height Maps - texture that provides height variation information based on a grayscale. White surfaces indicate landscape height increases, while black indicates height decreases
+        - Creating Landscapes
+            - Material and Material Layers
+            - Landscape Level of Detailing
+            - Density and Size of Landscape Tile
+            - Fill World - creates a landscape that is the size of the entire game space that is currently available
+            - Create - confirms the settings and uses them to create a new landscape
+        - Landscape Management
+            - Manage - Selecting, Adding, Deleting, Updating Size, Moving
+            - Splines - series of connected points that run on top of the landscape
     b. Sculpting Shapes and Volumes
-    c. Using Foliage
+        - Tool Menu
+            - Sculpt - sculpts up or down into the landscape mesh
+            - Smooth - brushes smoothness or lessens the variation difference between areas being influenced by the scultp tool
+            - Flatten - flattens the ladndscape to the height specified when you first click the landscape with the Flatten tool activated
+            - Ramp - connects two areas by ramping the landscape between the two with a constant change in grade between points
+            - Hydro Erosion and Erosion - simulates general wear of the ground that happens in a world scenario
+            - Noise - applies a general noise to the landscape
+            - Retopologize - reduces the spacing and difference in variation between surface components to reduce stretching
+            - Visibility - hides or unhides selections of surfaces on the landscape mesh
+            - Selection - masks selections of the landscape mesh
+            - Copy/Paste - selects a section of the landscape to paste similar height settings into another section of the landscape
+        - Brush Menu
+            - Circle - most basic and default brush
+            - Alpha - uses a specific texture as a mask influenced by a grayscale similar to a height map
+            - Pattern - uses a repeating pattern
+            - Component - affects whole component pieces of the area being sculpted
+        - Falloff Menu
+            - Smooth - soft blend between strong and weak parts of the brush
+            - Linear - direct constant falloff
+            - Spherical - weaker influenced falloff toward the center and increases to a stronger influence toward the edge end of the brush
+            - Tip - strong influence at the center with a quick falloff to a weaker falloff that slowly dissipates toward the edges
+        - Painting - paint material layers onto the landscape mesh
+        - Landscape Materials - LandscapeLayerBlend
+            - LB_WeightBlend - blends on an additive value of 0 to 1, the more of the layer that is painted on the landscape, the more predominately visible the layer becomes
+            - LB_HeightBlend - blends based on the associated height map assigned with the height layer input
+            - LB_AlphaBlend
+    c. Using Foliage - collection of assets placed on top of and in direct relation to the landscape mesh
+        - Paint - painting options of the static meshes
+        - Reapply - applies current setttings to all of the currently placed Foliage Static Meshes
+        - Select - allows you to select certain groups of selections in the entire world space of Foliage Static Meshes
+        - Lassso - allows you to select certain groups of selections
+        - Fill - allows you to fill complete selections in the scene with the desire Foliage Static Mesh
+        - Placing Foliage - must have Static Meshes added to the Foliage tab
 
 Chapter 9 - World Building
     a. Building Worlds

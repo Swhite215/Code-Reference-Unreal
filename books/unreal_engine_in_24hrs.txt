@@ -226,12 +226,33 @@ Chapter 8 - Creating Landscapes and Foliage
 
 Chapter 9 - World Building
     a. Building Worlds
+        - Environmental Narrative - create a narrative that describes what happened to the space you are building
+        - Anatomy of a Level
     b. World Building Process
+        - Scale and Scope
+            - Establishing Scale - 1 unreal unit (uu) is equal to 1  cm. 6ft character will be 182.88 uu
+            - Establishing Scope - quality over quantity
+        - Shelling and Blocking - block out level's structural assets
+        - Prop and Asset Placement
+            - Placing Props and Assets
+            - Visual Complexity and Framing - create mini compositions that grab attention and help guide them through the world
+            - Working with Modular Assets - disguise reuse
+            - Combining Actors into a Single Blueprint Class - group and attach Actors together
+            - Creating World Beyond - areas that fall beyond the player's reach, the illusion the World is bigger than it is
+        - Lighting and Audio Pass
+            - Lighting - establishes mood, ties space and asseets together, and affects player's emotional response to environment
+                - Remember: shadow colors, Lightmass Importance Volume
+            - Audio - huge impact on player perception
+        - Playtest and Refine
+            - Try to look at level from player's point of view and identify any issues
+            - Reflection Capture Actors - capture images of the level from their location and project reflections onto other Actors in the vicinity
+            - Fog ACtors - hide imperfections, small level, etc
+            - Post Processing Volume Actors - Depth of Field, Motion Blue, Scene Color, Vignette
 
 Chapter 10 - Crafting Effects with Particle Systems
     a. Understanding Particles and Data Types
     b. Working with Cascade
-    c. Using COmmon Modules
+    c. Using Common Modules
     d. Setting Up Materials for Particles
     e. Triggering Particle Systems
 

@@ -251,10 +251,63 @@ Chapter 9 - World Building
 
 Chapter 10 - Crafting Effects with Particle Systems
     a. Understanding Particles and Data Types
-    b. Working with Cascade
+        - Sprites - common, single camera-facing quad mesh with a texture to define visuals
+        - Mesh Data - particle attaches to a single polygonal mesh, great for rockslides or flying debris
+        - Anim-trail Data - used with Skeletal Meshes and animation, create trails using sockets from Skeletal Meshes
+        - Beam Data - draws a camera facing set of quads that stretch between the recently created particles
+        - GPU Sprites - sprites simulated entirely on the graphics processor
+        - Ribbon Data - draws quads between each pair of recently placed particles, interpolating bends with smooth curves
+    b. Working with Cascade - particle editor
+        - Particle System - collection of one or more particle emitters
+        - Cascade Panels
+            - Toolbar, Viewport, Emitters Panel, Modules Panel, Details Panel, Curves Editor
+        - Required Modules
+            - Emitter Information
+            - Required Module - holds the parameters a Particle Emitter absolutely requires to function
+            - Spawn Module - responsible for number of new particles that are created and their frequency or rate of emission
+                - Module Properties
+                    - Vector Constant - value is same over lifetime of simulation
+                    - Vector Constant Curve - property value that changes over time
+                    - Vector Uniform - takes in min and max values and returns a uniformly random value between the two
+                    - Vector Uniform Curve - time-based result with controlled randomess
+            - Using the Curve Editor
+                - Toolbar, Channel Visualizers, Property Visualizer, Key
     c. Using Common Modules
+        - Required Module - handles most of the bare minimum information required by one emitter
+            - Material, Use Local Space, Kill on Deactivated, Kill on Completed, Emitter Duration, Emitter Loops, SubUV
+        - Spawn Module - used to determine how many new partricles are created and how often it happens
+            - Rate - number of particles to emit per second
+            - Rate Scale - used to modulate the number of particles
+            - Burst
+                - Burst List - list of counts and times to spawn a set number of particles
+                - Burst Scale - scales the values determined by the Burst List Property
+        - Lifetime Module - requirement, determines how long particles remain in existence
+        - Initial Size and Size by Life Modules
+            - Initial Size - sets the particle's size at the time they are spawned
+            - Size By Life - modulates an individual particle's size over the course of it's lifetime
+        - Inital Colr, Scale Color/Life, and Color Over Life Modules
+            - Initial Color - sets the particles color at the time they are spawned
+            - Scale Color/Life -  modulates color of particle over the lifetime of the particle
+            - Color Over Life
+        - Initial Veloicity, Inherit Parent Velocity, and Const Acceleration Modules
+            - Intial Velocity - starting velocity of every particle
+            - Inherint Parent Velocity - emitter speed is applied to particle when it is spawned
+            - Const Acceleration - applies a constant amount of acceleration to all particles in the emitter evenly
+        - Initial Location and Sphere Modules
+            - Initial Location - uses a vector distribuion to pick the starting location of each particle
+            - Spheres - distributes starting location of particles throughout a sphere volume
+        - Initial Rotation and Rotation Rate Modules
+            - Intial Rotation - sets the starting rotation of each particle
+            - Rotation Rate - give all particles a unique amount of angular velocity
     d. Setting Up Materials for Particles
+        - Particle Color
+        - SubUV Textures - used for special effects where distinct frames of an animation are prerendered into a single texture sheet
+            - Step 1: Tell the emitter's Required Module that number of columns and rows in the Sub UV texture
+            - Step 2: Create a SubImage index in the Particle Emitter and set up a curve, picking which frames to show at which time
+            - Step 3: Place a ParticleSubUV or TextureParameterSubUV node in the material graph of the applied material
     e. Triggering Particle Systems
+        - Auto Activate - wherever it is place - Actor -> Activation -> Auto Activate Property
+        - Activating Particle Systems Through Level Blueprints - pass a reference to an emitter Actor and use it to control the activation state of a Particle System
 
 Chapter 11 - Using Skeletal Mesh Actors
     a. Defining Skeletal Meshes

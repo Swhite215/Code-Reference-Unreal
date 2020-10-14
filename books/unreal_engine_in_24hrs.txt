@@ -311,9 +311,61 @@ Chapter 10 - Crafting Effects with Particle Systems
 
 Chapter 11 - Using Skeletal Mesh Actors
     a. Defining Skeletal Meshes
+        - Note - vertices are manipulated by a skeleton-like hierachy of the independent location
+        - Skinning or Skinned Mesh - refers to the process of binding vertices to the underlying skeleton
+        - Three Components for Animating a Skeletal Mesh
+            - Skeletal Mesh - skinned vertices that go with a set of internal bones, defines the appearance of the mesh, including how materials are assigned
+            - Skeleton
+            - Animation Sequence - record of how a skeleton moves, including the keyframe location, rotation, and scale of each animated bone in the skeleton
+            - BONUS - Physic Assets - defines the simplified collision gemoetry attached to the skeleton, if it needs to interact with the physics system
+            - BONUS - Animation Blueprints - responsible for the logic necessary to choose which animation sequences to use at which times
     b. Importing Skeletal Meshes
-    c. Learning Persona
+        - Use a 3rd Party Tool e.g. Maya, Autodesk 2DS Max, or SideFX's Houdini
+        - Best Practices
+            - Triangulate the mesh prior to export
+            - Select root of the mesh skeleton and use an option such as Export Selected Only, when exporting
+            - Smoothing groups should be enabled
+            - Preserver edge orientation should be enabled
+            - Tangent and binomials (also known as tangent space) should be disabled
+            - Import mesh with no animations attached and the character in a default bind pose
+        - FBX Import Options
+            - Import As Skeletal - mesh is treated as a Skeletal Mesh
+            - Import Mesh - unchecking causes UE4 to ignore the mesh completely
+            - Skeleton - if optio blank, a new skeleton is created
+            - Import Animations
+            - Tranform - correct differences in software packages scene setup
+            - Import Materials
+            - Convert Scene - causes UE4 to convet the Y+ up axis of most recent packages to the Z+ up axis of Unreal Engine
+    c. Learning Persona - editor for working with Skeletal Meshes, skeletons, animation sequences, and animation Blueprints
+        - Skeleton Mode
+            - Reference Pose Button - stops animations and returns character to reference pose
+            - Skeleton Mode Button
+            - Skeleton Tree - displays hierarchical outline of bones in the skeleton
+            - Persona Viewport - miniature scene view that shows the selected skeleton and Skeletal Mesh
+        - Mesh Mode
+            - Mesh Mode Button
+            - LOD Settings Category
+            - Physics Cateogry - apply a Skeletal Mesh's physics asset
+            - LOD Visualizer - override displayed LOD, to visualize different LODs on your mesh
+            - Viewport Statistics
+            - Morph Target Previews
+        - Animation Mode
+            - Create Asset Button - create new montages, animationm sequences, and other animation type assets
+            - Animation Mode Button
+            - Details Panel
+            - Anim Asset Details
+            - Anim Sequence Editor - modify Additive Animation Curves, Notifications, and Tracks in a Timeline keyframe fashion
+            - Timeline - modify current playback time and animation 
+            - Asset Browsers - quick browser for animation assets
+        - Graph Mode - handles logic for bledning different animation states and behaviors
     d. Using Skeletal Mesh Actors
+        - Important Animation Category Properties in Static Mesh Actor
+            - Animation Mode - use animation Blueprint or a single animation asset
+            - Anim to Play - specify a reference from the Content Browser to play a single animation asset
+            - Looping - animation will play continuously
+            - PLaying - means animtion will play when the game begins instead of waiting to be set manually through Blueprints or some other method
+            - Initial Position - determines the starting time of the animation
+            - PlayRate - how fast the animation plays back
 
 Chapter 12 - Matinee and Cinematics
     a. Matinee Actors

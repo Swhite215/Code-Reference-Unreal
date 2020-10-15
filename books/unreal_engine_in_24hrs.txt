@@ -369,10 +369,31 @@ Chapter 11 - Using Skeletal Mesh Actors
 
 Chapter 12 - Matinee and Cinematics
     a. Matinee Actors
+        - Matinee - toolset and piepeline fro creating in-game cinematics
+        - Matinee Actor Properties
     b. Matinee Editor
-    c. Curve Editor
+        - Menu Bar, Toolbar, Curve Editor, Tracks Panel, Details Panel, Time Bar
+        - Tracks Panel - Groups and Tracks to keep things organized
+        - Play Head - shows where you are in time while editing a sequence and allows you to place keyframes in a track at a specific time
+        - Groups - store the Actor or Actors that you want to control and the tracks that you are using
+        - Tracks - used to set and store keyframe data over time for specified properties (16 predefined, customizable)
+        - Folders - used to organize groups in Matinee
+    c. Curve Editor - micromanage interperloation data represented as a spline
+        - Interpolation Modes
+            - Curve (Red) - control ease-in and ease-out effects
+            - Linear (Green) - stratifies the change in values between keyframes evenly over time
+            - Constant (Black) - holds the last keyframes values for all the in-between frames until the next keyframe
     d. Working with Other Tracks
-    e. Working with Cameras in Matinee
+        - Sound Track - allows you to play a Sound Wave asset or a Sound Cue
+    e. Working with Cameras in Matinees
+        - Camera Groups and Actors
+        - Director Group - unique group that allows you to work like a film editor 
+            - Director Track - switches the current view between Camera groups throughout the sequence
+            - Fade - allows you to set fade-ins/fade-outs over the sequence on the active camera
+            - Slomo - uses keys to temporarily change the playback speed of the sequence
+            - Audio Master - controls the volume and pitch of all the audio tracks in the sequence
+            - Color Scale - changes the color tiniting of the rendered frame while the Matinee sequence is playing
+        - Working with Matinee Data Assets - stores group, track, folder, and keyframe data and is accessible through the Content Browser
 
 Chapter 13 - Learning to Work with Physics
     a. Using Physics in UE4

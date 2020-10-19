@@ -397,10 +397,57 @@ Chapter 12 - Matinee and Cinematics
 
 Chapter 13 - Learning to Work with Physics
     a. Using Physics in UE4
+        - Key Terminology
+            - Physics Body - actor that responds to external forces and collisions, Static Mesh set to simulate physics
+            - Engine - NVIDIA PhysX Engine - processes rigid bodies, soft bodies, cloth, destructibles, and particles
+            - Rigid Body - solid, non-deformable object, such as a piece of wood or a beach ball
+            - Soft Body - deformable object that conforms to the world around it when it collides with something
+            - Cloth - a type of soft body
+            - Destructible - a rigid body that fractures and crumbles when enough force has been applied
+            - Linear - refers to a directional force that changes the position of an Actor in a level
+            - Angular - refers to rotational forces that change the orientation of an Actor
+            - Mass - refers to the amount of matter in a given body
+            - Desnity - amount of mass by volume in a give physics body
+            - Damping - refers to how quickly a physics body comes to rest after a force has been applied, dissipation of energy over time
+            - Friction - amount of resistance applied to a sliding or rolling body
+            - Restitution - amount of bounce a physics body has and how quickly the body comes to rest
+            - Force - applied to a mass for a duration
+            - Impulse - an instantaneous hit
+        - Applying Physics Game Mode to a Level - Settings -> Project Settings -> Game Mode -> GameMode Override to SimplePhysicsGameMode
+        - Project and World Physics Settings
+            - Entire Project - Settings -> Project Settings
+            - Individual Level - World Settings -> Physics
     b. Simulating Physics
+        - Physic Properties for a Static Mesh Actor
+            - Simulate Physics - physics simulation on and off for the Actor
+            - Mass in KG - mass of the body in KG
+            - Linear Damping - drag force added to reduce linear movement
+            - Angular Damping - drag force added to reduce angular movement
+            - Enable Gravity - should the object have the force of gravity applied
+            - Contraints - controls which axises teh ACtor can move and rotate on when simulating physics
+            - Modes - presets for constraint assignments
+            - Start Awake - whether the object should start aware or initially be sleeping
+            - Center of Mass Offset - offset for the center of the mass of this object
+            - Mass Scale - per instance scaling of mass
+            - max Angular Velocity - limits the amount of angular velocity that can be applied
+            - Use Async Scene - body is put into asynchronous physics scene
+            - Sleep Family - set of values used to consider when to put this body to sleep
+            - Position Solver Iteration Count
+            - Velocity Solver Iteration Count
     c. Using Physical Materials
-    d. Working with Constraints
+        - Creating a Physical Material Asset - Content Browser -> New Folder -> Right Click - Physics -> Physical Material
+        - Adding a Physical Material to a Static Mesh Actor - Select Actor -> Level Details Panel: Collision
+        - Adding a Physical Material to a Material - Material Editor: Material -> Final Material Node -> Phys Material Override -> Drag Physical Material Asset
+    d. Working with Constraints - allow you to control the movement of a physics body by locking movement and rotation on a specific axis
+        - Attaching Physics to Actors - attaching relationship is ignored for physics acting on two bodies
+        - Physics Constraint Actors - link Physics Actors to any other Actor
+            - Constraint Actor - create a joint, or hinge, between two physical bodies
+                - Free - no constraint at all
+                - Lock - no movement at all
+                - Limited - set a range of movement
     e. Using Force Actors
+        - Physics Thruster Actor - applies a force in specified direction to a Physics Actor
+        - Radial Force Actors - applies force in all directions from a single point of influence
 
 Chapter 14 - Introducing Blueprint Visual Scripting System
     a. Visual Scripting Basics

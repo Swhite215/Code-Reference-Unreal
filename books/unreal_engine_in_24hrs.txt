@@ -451,8 +451,64 @@ Chapter 13 - Learning to Work with Physics
 
 Chapter 14 - Introducing Blueprint Visual Scripting System
     a. Visual Scripting Basics
+        - Blueprint - visual scripting environment
+            - Compiling
+                - Compiler - software used to compile instructions written in a programming language
+                - Compiling - turning instructions into machine language that can be executed by the CPU
+                - Bytecode - compiled source code that is processed by a virtual machine instead of hardware
+                - Virtual Machine - software that translates byte code into instructions the hardware can understand and process
     b. Understanding the Blueprint Editor
+        - Level Blueprint - used to manage global events for a level, there is only one level blueprint for each level, and it is automatically saved when the level is saved
+        - Blueprint Class - class derived from an existing class that has been made in C++ or from another Blueprint class. It is used to code functionality for Actors placed in a level
+        - Data-Only Blueprint - only stores the modified properties of an inherited Blueprint
+        - Blueprint Interface - Blueprint Interfaces are used to store a collection of user defined functions that can be assigned to other Blueprints. BPIs allow other Blueprints to share and pass data among each other
+        - Blueprint Macros - these are self-contained node graphs of a commonly used sequence of nodes that can be reused throughout other blueprints. Blueprint Macros are stored in a Blueprint Macro Library
+        - Blueprint Editopr Interface
+            - Toolbar, Blueprint Panel, Details Panel, Event Grap
+            - Blueprint Editor Toolbar
+                - Compile - compiles a Blueprint
+                - Search - opens a find result panel with a search box for locating nodes in a Blueprint
+                - Class Settings - shows the options for the Blueprint in the Details panel
+                - Class Defaults - displays the properties for the Blueprint in the Details panel
+                - Play - previews the level
+            - Blueprint Panel - keeps track of all the node graphs, functions, marcos, and variables that your Blueprint uses
+            - Event Graph - where you do most of your work when using the Blueprint Editor.
+            - Blueprint Context Menu - context sensitive by default, showing you the actions that are relefvant to what you currently have selected
+            - Nodes, Wires, Execs, and Pins
+                - Nodes - visual representation of events, functions, variables, and are color coded to represent their use
+                    - Red Node - event node, used to initiate the execution of a sequence of node 
+                    - Blue Node - functions to perform specific operations
+                    - Multicolored Oval Node - variables
+                    - In and Out exeuction pins (execs), are the white facing triangles that denote sequence flow
+                    - Data Pins are color coded based on the type of data they need
+                    - Wires - connect nodes  
     c. Fundamental Concepts in Scripting
+        - Events
+            - BeginOverlap - fires when the collision hulls of two Actors overlap
+            - EndOverlap - fires when the colision hulls of two Actors stop overlapping
+            - Hit - fires when the collision hulls of two Actors touch but don't overlap
+            - BeginPlay - fires every time a level is loaded into memory and played
+            - EndPlay - fires when the level is over
+            - Destroyed - fires when an Actor has been removed from memory
+            - Tick - fires with every tick of the CPU
+            - Custom - acts as the user has defined it to work, based on specific needs
+        - Functions - a piece of code that performs specific operations, takes in data stored in variables, processes the information, and in most cases returns a result 
+        - Variables - store different types of data]
+            - Boolean = Red - 0 or 1
+            - Integer = Cyan - whole round number
+            - Float = Green - decimal
+            - String = Magenta - text
+            - Vector = Gold - three floats X, Y, and Z
+            - Rotator = Purple - vector that stores three float X is roll, Y is pitch, and Z is yaw
+            - Transform = Orange - a struct that stores a vector for location, rotator for orientation, and a vector for scale
+            - Object = Blue - refers to an Actor in the level and stores all of its properties in memory
+        - Operators and Conditionals
+            - Operators - mathematical operations such as addition, subtraction, multiplication, and division
+            - Conditionals - allow you to check or compare the state of a variable and then respond accordingly
+        - Script Organization and Commenting
+            - Node Comments - allow you to make notes on any node
+            - Comment Box - allow you to wrap a selection of nodes inside a box and add a text comment
+            - Reroute Nodes - helps control the placement of a wire
 
 Chapter 15 - Working with Level Blueprints
     a. Actor Collision Settings

@@ -511,9 +511,27 @@ Chapter 14 - Introducing Blueprint Visual Scripting System
             - Reroute Nodes - helps control the placement of a wire
 
 Chapter 15 - Working with Level Blueprints
-    a. Actor Collision Settings
-    b. Assigning Actors to Events
-    c. Assinging Actors to Reference Variables
+    a. Actor Collision Examples
+        - Order to Setup OnActorBeginOverlap
+            - Add Box Trigger Actor
+            - Select Simulation Generates Hit Events or Generate Overlap Events to broadcast Collision Events to Level Blueprint
+            - Select Actor in Level -> Blueprint Event Graph: Context Menu -> Context Sensitive -> Add Event for My Trigger Box -> Collision -> Add OnActorBeginOverlap Event
+            - OnActorBeginOverlap Event Node: Other Actor Pin -> Get Display Name -> Print String
+        - Order to Assign Actor to ACtor Reference Variable=
+            - Select Actor in Level -> Blueprint Event Graph: Context Menu -> Add Actor as Reference Variable
+        - Order to Set Property of an Actor or Sub Component
+            - Get Actor Reference Using Above
+            - Optional: Get Sub Component from Actor
+            - Get Function that Targets Actor/Subcomponent e.g. SetActorLocation or Set Static Mesh
+            - OnActorBeginOverlap exec pin to SetActorLocation w/ Target Input the Actor or Component Reference Variable Object
+        - Order to Activate Property e.g. Start Emittor or Play Sound
+            - Get Actor Reference e.g. Emitter or Ambient Sound Actor
+            - Get Function that Targets Activiation of Specific Actors e.g. Activate, Deactivate, IsActive, SetActivate, ToggleActive
+            - OnActorBeginOverlap exec pin to Activate w/ Target Input the Actor Reference Variable Object
+        - Order to Play Sound
+            - Add Play Sound at Location Function
+            - OnActorBeginOverlap exec pin to Play Sound at Location
+            - Play Sound At Location: Sound - Sound Cue Asset
 
 Chapter 16 - Working with Blueprint Classes
     a. Using Blueprint Classes

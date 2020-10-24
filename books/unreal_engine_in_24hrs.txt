@@ -534,11 +534,28 @@ Chapter 15 - Working with Level Blueprints
             - Play Sound At Location: Sound - Sound Cue Asset
 
 Chapter 16 - Working with Blueprint Classes
-    a. Using Blueprint Classes
+a. Using Blueprint Classes - script new actors that can be reused in any level
     b. The Blueprint Editor Interface
+        - Components Panel - lists all the components in the Blueprint and is used to manage them
+        - Viewport Panel - displays the components in the Blueprint and is used to set up the spatial relationships of the components in the Actor
+        - Construction Script - unique function that runs when an instance of the Blueprint (an Actor) is placed in a level. It is a node graph that, when executed, modifies each instance independently of the original blueprint KEY*
+        - Toolbar - Saves, Find in Content Browser, Simulation
     c. Working with Components
+        - What - sub object element of a blue print
+        - Adding Components
+            - +Add Components or click+drag
+        - Viewport Panel - use transform gizmos to adjust the location, rotation, and scale of each of the components in the blueprint
+        - Blueprint Scripting with Components
+            - Note: while working inside the Actor blueprint, use self when referring to the Actor
+            - Add a component to the Blueprint class Event Graph as a component reference variable by click+drag the component into the Event Graph
     d. Working with the Timeline
-    e. Scripting a Pulsating Light
+        - Timeline Node - allows you to create spline curve data that can be used in a Blueprint to change values over time e.g. animate the position of an Actor and/or its components
+        - Add a Timeline Node - right+click, Add Timeline
+        - Timeline Tracks and Curves
+            - Types - Float, Vector, Color, and Event
+            - Add Track - click type you want
+            - Modify - move key
+    e. Scripting a Pulsating Light - pg. 301
 
 Chapter 17 - Using Editable Variables and the Construction Script
     a. Setting Up

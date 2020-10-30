@@ -618,10 +618,31 @@ Chapter 19 - Making an Action Encounter
 
 Chapter 20 - Creating an Arcade Shooter: Input Systems and Pawns
     a. Identifying Requirments with a Design Summary
+        - Player controls a spaceship
+        - Spaceship can move left or right
+        - Asteroids are in the player's way, moving downward
+        - The spaceshhip can shoot the asteroids to destroy them
     b. Creating a Game Project
+        - UE4 Project Browser -> New Project -> Blank Project -> Settings -> -> File -> New Level
     c. Creating a Custom Game Mode
+         - Game Mode - responsible for defining the behavior of the game being played and enforcing rules, holds info like what items a player begins game with, what happens when the player dies or the game ends, game time limits, and scores
+            - Setting: Content Browser -> Blueprint Class -> Pick Parent Class -> Game Mode
     d. Creating a Custom Pawn and Player Controller
+        - Pawns - Actors that are controlled directly by players or artificial intelligence
+        - Controllers - interface between a Pawn and the player or AI controlling it, Actors that cna posses and control Pawns
+        - Inheriting from Default Pawn
+            -  CollisionComponent, MeshComponent, and MovementComponent
     e. Controlling a Pawn's Movement
+        - Disabling the Default Movement
+            -  DefaultPawn Defaults Panel -> Uncheck Add Default Movement Bindings
+        - Setting Up Input Action and Axis Mappings
+            - Input Binding - taking an input, like a joystick movement, key press, or trigger pull, and registering a specific action with that input is called input binding
+            - Settings -> Project Settings -> Input Section
+                - Action Mappins - are for single keypresses and release inputs
+                - Axis Mappings - for continuous input, such as movement, turning, and camera control
+                - Order: Edit -> Project Settings -> Input -> Bindings: Axis Mapping + -> Name -> + # of Mappinngs with Key or Axis and Scale
+            - Using Input Events to Move a Pawn
+                - Blueprint Class Editor of Pawn -> Event Graph -> +InputAxis NAME -> Add Movement Input, Get Actor Right Vector or just MoveRight function of DefaultPawn class
     f. Setting Up a Fixed Camera
 
 Chapter 21 - Creating an Arcade Shooter: Obstacles and Pickups

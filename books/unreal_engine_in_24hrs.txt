@@ -579,12 +579,42 @@ Chapter 18 - Making Key Input Events and Spawning Actors
     d. Spawning an Actor from a Class
         - Keyboard Input Event - KeySpawner_BP Blueprint - E - Spawn Actor from Class fn() - Pick Blueprint - Provide Location Values
 
-
 Chapter 19 - Making an Action Encounter
     a. Project Game Modes
+        - FPS and Basic3rdP
+        - HUDS - Unreal Motion Graphics HUDs
+        - Game Timer and Respawn System - Game Mode Blueprints
     b. Knowing Characters' Abilities
+        - Basic3rdPCharacter Blueprint -> Component -> Properties
     c. Using Blueprint Classes
+        - BP_Common Folder
+            - Launcher_BP - laucnhes player into the air
+            - Mover_BP - animates a mesh component between twolocations
+            - Pendulum_BP - actor that swings back and forth and causes damage
+            - Smasher_BP - actor that animates two spiked pistons back and forth and causes damage
+            - Stomper_BP - animates a mesh component between two locations and causes damage
+            - SpikeTrap_BP - actor releases spikes out of the floor when the character walks over it
+        - BP_Turrets Folder
+            - Pattern_Projecticle_BP - projecticle blueprint spawned by the PatternTurret_BP, causes damage to the player when hit
+            - PatternTurrent_BP - spawns Pattern_Projectile_BP based on specific properties
+            - ProjecticleTurret_BP - tracks player and fires a projectile at the character when he or she moves within a specified range
+            - TraceTurret_BP -  tracks the player character and fires a trace weapon at the character when he or she moves within range
+            - TurretProjectile_BP - spawned by the ProjectileTurret_BP Blueprint
+        - BP_Respawn Folder
+            - Checkpoint_BP - works with the respawn system in the provided Game Modes. Store location at Actor trigger, and respawns Actor here
+            - KillVolume_BP - destroys the player character when touched, forcing the destroy event in the provided Game Modes to fire and respawn the player at the last touched checkpoint Actor
+        - BP_Pickup Folder
+            - CollectioNPickup_BP - collectible
+            - HealthPickup_BP - gives player health
+            - PhysicsPickup_BP - Actor can use physics gun to manipulate object
+        - BP_Levers Folder
+            - UseKeyLever_BP - works when player walks up to it and presses the E key
+            - Door_BP - touch trigger door opens when the player walks up to it
+            - PhysicsSpawner_BP - player can walk up to this Actor and press the E key to spawn a physics pickup
+            - TouchActivation_BP - works when either the character or  aphysics PickUp_BP Actor with Actor tag set to Key interacts with it, can unlock Door_BP or turn on ActivateStomper_BP
+            - ActivateStomper_BP
     d. Actor and Component Tags
+        - Tag - name that can be assigned to either an Actor or a Component of an Actor, and it can be used to differentiate between two or more of the same Actor or Component types in Blueprint
 
 Chapter 20 - Creating an Arcade Shooter: Input Systems and Pawns
     a. Identifying Requirments with a Design Summary

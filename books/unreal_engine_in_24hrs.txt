@@ -560,13 +560,25 @@ a. Using Blueprint Classes - script new actors that can be reused in any level
 Chapter 17 - Using Editable Variables and the Construction Script
     a. Setting Up
     b. Making Editable Variables
+        - Editable - can be modified outside of the blueprint, should provide tooltip and category
+        - Order - Actor Blueprint -> Variables+ -> Check Editable Variable
     c. Using the Construction Script
+        - Update - every time an Actor's propertiers or transforms change in the Blueprint Editor, or when you compile the Blueprint, changes are seen while working in editor
+        - Limitations - cannot spawn new Actors
+        - Limiting Editable Variables - slider range and value range properties
 
 Chapter 18 - Making Key Input Events and Spawning Actors
     a. Why Spawning is Important
     b. Creating a Blueprint Class to Spawn
+        - Order - create a Blueprint class to spawn, use construction script to set dynamic values
+        - Sequence Node - splits the event signal into as many signals as you need
+        - Expose on Spawn Variable Property - exposes the variable to whichever Blueprint is spawning the new actor
     c. Setting up the Spawner Blueprint
+         - Collider - OnComponentBeginOverlap - Enable Input
+         - Spawn Functions - Actor, Emitter, Sound, etc.
     d. Spawning an Actor from a Class
+        - Keyboard Input Event - KeySpawner_BP Blueprint - E - Spawn Actor from Class fn() - Pick Blueprint - Provide Location Values
+
 
 Chapter 19 - Making an Action Encounter
     a. Project Game Modes

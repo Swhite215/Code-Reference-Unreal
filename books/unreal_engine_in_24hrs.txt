@@ -635,7 +635,7 @@ Chapter 20 - Creating an Arcade Shooter: Input Systems and Pawns
     e. Controlling a Pawn's Movement
         - Disabling the Default Movement
             -  DefaultPawn Defaults Panel -> Uncheck Add Default Movement Bindings
-        - Setting Up Input Action and Axis Mappings
+        - Setting Up Input Action and Axis Mappings - RRL - pg. 367-368
             - Input Binding - taking an input, like a joystick movement, key press, or trigger pull, and registering a specific action with that input is called input binding
             - Settings -> Project Settings -> Input Section
                 - Action Mappins - are for single keypresses and release inputs
@@ -643,30 +643,47 @@ Chapter 20 - Creating an Arcade Shooter: Input Systems and Pawns
                 - Order: Edit -> Project Settings -> Input -> Bindings: Axis Mapping + -> Name -> + # of Mappinngs with Key or Axis and Scale
             - Using Input Events to Move a Pawn
                 - Blueprint Class Editor of Pawn -> Event Graph -> +InputAxis NAME -> Add Movement Input, Get Actor Right Vector or just MoveRight function of DefaultPawn class
-    f. Setting Up a Fixed Camera
+    f. Setting Up a Fixed Camera - RRL - pg. 372
 
 Chapter 21 - Creating an Arcade Shooter: Obstacles and Pickups
-    a. Creating an Arcade Shooter: Obstacles and Pickups
-    b. Making Your Obstacle Move
-    c. Damaging the Pawn
-    d. Restarting the Game on Death
-    e. Creating a Health Pickup
-    f. Creating an Actor Spawner
-    g. Cleaning Up Old Obstacles
+    a. Creating an Obstacle Base Class - RRL - pg. 378
+    b. Making Your Obstacle Move - RRL - pg. 382
+    c. Damaging the Pawn - RRL - pg. 385 + pg. 387
+    d. Restarting the Game on Death - RRL - pg. 389
+    e. Creating a Health Pickup - RRL - pg. 391 + pg. 395
+    f. Creating an Actor Spawner - RRL - pg. 398-400
+    g. Cleaning Up Old Obstacles - RRL - pg. 403
 
 Chapter 22 - Working with UMG
     a. Creating a Widget Blueprint
     b. Navigating the UMG Interface
-    c. Creating a Start Menu
+        - Toolbar, Palette Panel, Hierarchy Panel, Designer Panel, Details Panel, and Animations Panel
+        - Setting the Resolution - Screen Size Dropdown
+        - Anchor Points and DPI Scaling
+            - Anchor - establishes a normalized reference point for widget placement on screen
+            - DPI Scaling - scales the interface up and down, depending on the target platform resolution and aspect ratio
+    c. Creating a Start Menu - RRL - pg. 413-420
     d. Sample Menu System
 
 Chapter 23 - Making an Executable
-    a. Cooking Content
-    b. Packaging A Project for Windows
-    c. Resources for Android and iOS Packaging
-    d. Accessing Advanced Packaging Settings
+    a. Cooking Content - converts editor specific data assets into assets that are ready for use on a myriad of platforms
+    b. Packaging A Project for Windows - RRL - pg. 430
+    c. Resources for Android and iOS Packaging - RRL - pg. 435
+    d. Accessing Advanced Packaging Settings - 
 
 Chapter 24 - Working with Mobile
     a. Developing for Mobile Devices
+        - Previewing for Mobile - Viewport: Settings -> Preview Rendering Level -> Mobile/HTML 5 -> Default Mobile/HTML 5 Preview
+        - Quality Switch Node - removes costlier operations from materials
+            - Settings -> Material Quality Level -> Low, Medium, and High
+            - Level Editor -> Play in Standalone Game
+            - Play -> Mobile Preview
+        - Optimizing for Mobile
+            - Bake Lighting, Avoid Movable Lights, Disable Most Post Processes, Avoid Masked and Transparent Materials, Keep Materials Simple, Don't Plug UV Modifications, Keep Low Triangle Count, Use Square Textures (32x32, 64x64, 128x128, etc.)
+        - Set Editor Targets - Target = Mobile/Tablet
+        - Mobile/Tablet Presets Disabled
+            - Separate Transparency, Motion Blue, Lens Flares, Auto Exposure, Ambient Occlusion, Anti-Aliasing Method, Mobile HDR, Bloom
     b. Using Touch
-    c. Using a Device's Motion Data
+        - Virtual Joysticks - pg. 454
+        - Touch Events - RRL - pg. 456-458
+    c. Using a Device's Motion Data - pg. 459-461
